@@ -1,0 +1,7 @@
+<div class="card">
+    <h2>Profilo Utente: {{ userName() }}</h2>
+    <p>Ruolo: {{ userRole() }}</p>
+    @if (userRole() === 'Sviluppatore Junior') {
+      <p class="badge" role="button">Accesso Premium</p>
+    }
+</div>
